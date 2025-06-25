@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS môn học yêu thích</title>
+</head>
+<style>
+    body {
+        background-color: rgb(218, 191, 204);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1 {
+        padding-top: 200px;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+        grid-column: 2fr 2fr 2fr 2fr 2fr 2fr;
+        gap: 20px;
+    }
+    
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 5px solid rgb(235, 150, 150);
+        border-radius: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .container>div {
+        background-color: rgba(255, 210, 210, 0.8);
+        padding: 10px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Danh Sách Môn Học Yêu Thích</h1>
+    <div class="container">
+        <div class="card1">
+            <h2>Lập Trình Web</h2>
+        </div>
+        <div class="card2">
+            <h2>Thiết Kế Đồ Họa</h2>
+        </div>
+        <div class="card3">
+            <h2>Cơ Sở Dữ Liệu</h2>
+        </div>
+        <div class="card4">
+            <h2>Marketing Số</h2>
+        </div>
+        <div class="card5">
+            <h2>Tài Chính Doanh Nghiệp</h2>
+        </div>
+        <div class="card6">
+            <h2>Logic học</h2>
+        </div>
+    </div>
+</body>
+
+</html>
