@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        nav {
+            background: #333;
+            padding: 15px 0;
+        }
+                .nav-menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .nav-item a:hover {
+            color: #4CAF50;
+        }
+        
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: #4CAF50;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="https://www.tiktok.com/@kieu_trinh04?lang=vi-VN">Tiktok</a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/tuyet.hanbang.92">Facebook</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/if.kie_trnh/">Instagram</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
